@@ -1,4 +1,4 @@
-public class Employee{
+public class Employee extends DevopsEngineer{
     String emp_name="Sneha";
      String emp_id="01FE22BCA131";
     public void displaydetails(){
@@ -6,8 +6,11 @@ public class Employee{
         System.out.println("Employee id:"+emp_id);
     }
     public static void main(String[] args) {
-       Employee e=new Employee();
-       e.displaydetails();
+       
+        float salary=100000;
+        Employee e=new Employee();
+        e.displaydetails();
+        e.displaySalary(salary);
     }
 
 }
